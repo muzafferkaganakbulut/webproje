@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="\HTML\css\style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body onmousemove="changeBackgroundColor(event)">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="\HTML\img\sev.jpg" alt="Kahve Dünyası" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="\HTML\index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                </li>
+            </ul>
+            <button onclick="changeBackgroundColor()" class="btn btn-outline-light mr-3" id="changeButton">Arka Plan
+                Rengini Değiştir</button>
+
+                
+           <!-- <button class="btn btn-outline-light my-2 my-sm-0 mr-3" onclick="toggleDarkMode()">Gece Modu</button> --> 
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Ara">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+            </form>
+        </div>
+    </nav>
+
+
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+
+        <div class="row">
+            <h1>İletişim Sayfası</h1>
+
+            <div class="col-md-12">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Ad</label>
+                        <input type="text" class="form-control" id="name" placeholder="Ad">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Soyad</label>
+                        <input type="text" class="form-control" id="surname" placeholder="Soyad">
+                    </div>
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="email">Gmail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col">
+                            <label for="password">Şifre</label>
+                            <input type="password" class="form-control" id="password" placeholder="Şifre">
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <label for="message">Mesaj</label>
+                        <textarea class="form-control custom-textarea" id="message"
+                            placeholder="Mesajınızı buraya yazın"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary d-block mx-auto">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="\main.js"></script>
+</body>
+
+</html>

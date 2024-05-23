@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kahve Dünyası</title>
+    <link rel="stylesheet" href="\HTML\css\style.css">
+
+
+</head>
+
+<body onmousemove="changeBackgroundColor(event)">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="\HTML\img\sev.jpg" alt="Kahve Dünyası" class="logo">Kahve Evreni
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Anasayfa <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#footer">Hakkımızda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ürünler</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                </li>
+            </ul>
+            <button onclick="changeBackgroundColor()" class="btn btn-outline-light mr-3" id="changeButton">Arka Plan
+                Rengini Değiştir</button>
+
+
+            <!-- <button class="btn btn-outline-light my-2 my-sm-0 mr-3" onclick="toggleDarkMode()">Gece Modu</button> -->
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Ara" aria-label="Ara">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Ara</button>
+            </form>
+        </div>
+    </nav>
+    <!-- <button id="leftButton" onclick="scrollToBottom()">Aşağı in</button> -->
+
+    <br>
+    <div class="container">
+        <h2 id="title" class="text-center mb-4">Sıcak Kahvelerimiz</h2>
+        <hr>
+        <div class="row" id="coffee-container">
+            <div class="col-md-4 coffee-div">
+                <img src="\HTML\img\Turkish coffee (1).jpg" alt="Türk Kahvesi" class="coffee-img">
+                <h3>Türk Kahvesi</h3>
+                <p>Geleneksel bir lezzet: Türk kahvesinin yoğun aroması ve benzersiz tadıyla kültürel bir serüvene
+                    çıkın.</p>
+            </div>
+            <div class="col-md-4 coffee-div">
+                <img src="\HTML\img\Cafe solo (1).jpg" alt="Espresso" class="coffee-img">
+                <h3>Espresso</h3>
+                <p>Yoğun ve aromatik bir deneyim: Espresso'nun güçlü ve karakteristik tadını keşfedin, kısa bir mola ile
+                    kendinizi şımartın.</p>
+            </div>
+            <div class="col-md-4 coffee-div">
+                <img src="\HTML\img\Lets Meet for Coffee (1).jpg" alt="Americano" class="coffee-img">
+                <h3>Americano</h3>
+                <p>Sıcak bir mola: Americano'nun klasik ve tatmin edici tadıyla sıcak bir içecek keyfi yaşayın, gününüzü
+                    zinde ve enerjik bir başlangıçla taçlandırın.</p>
+            </div>
+
+            <div class="row" id="coffee-container">
+                <div class="col-md-4 coffee-div">
+                    <img src="\HTML\img\Caramel Macchiato.jpg" alt="Türk Kahvesi" class="coffee-img">
+                    <h3>Caramel Macchiato</h3>
+                    <p>Tatlı bir kaçamak: Caramel Macchiato'nun kremalı dokusu ve karamel aromasıyla güne tatlı bir
+                        başlangıç yapın, kendinizi şımartın.</p>
+                </div>
+                <div class="col-md-4 coffee-div">
+                    <img src="\HTML\img\Caffè macchiato - Wikipedia.jpg" alt="Macchiato" class="coffee-img">
+                    <h3>Macchiato</h3>
+                    <p>Lezzetli bir deneyim: Macchiato'nun güçlü espresso tadıyla dengelenmiş süt köpüğünün muhteşem
+                        uyumuyla kısa bir mola verin, nefes alın.</p>
+                </div>
+                <div class="col-md-4 coffee-div">
+                    <img src="\HTML\img\Filtre Kahve Nasıl Yapılır_ Kağıt Filtre ile Kahve Yapmak _ Manfect.jpg"
+                        alt="Filtre" class="coffee-img">
+                    <h3>Filtre</h3>
+                    <p>Yumuşak ve aromatik bir mola: Filtre kahvenin hafif ve karakteristik lezzetiyle kısa bir ara
+                        verin, kendinize zaman ayırın.</p>
+                </div>
+                <!-- Yeni kahve kartları -->
+                <div class="col-md-4 coffee-div">
+                    <img src="  \HTML\img\indir (1).jpg" alt="Latte" class="coffee-img">
+                    <h3>Latte</h3>
+                    <p>Kremalı bir mola: Latte'nin yumuşak süt köpüğüyle kaplanmış espresso tadıyla keyifli bir ara
+                        verin, huzurlu bir anın tadını çıkarın.</p>
+                </div>
+                <div class="col-md-4 coffee-div">
+                    <img src="\HTML\img\Cappuccino (1).jpg" alt="Cappuccino" class="coffee-img">
+                    <h3>Cappuccino</h3>
+                    <p>Köpüklü bir mola: Cappuccino'nun yoğun espresso, süt ve süt köpüğünün muhteşem uyumuyla gününüzü
+                        keyiflendirin, kendinize küçük bir hediye verin.</p>
+                </div>
+                <div class="col-md-4 coffee-div">
+                    <img src="\HTML\img\Phân biệt các loại cà phê Ý đang HOT hiện nay - Wega Vietnam (1).jpg"
+                        alt="Mocha" class="coffee-img">
+                    <h3>Mocha</h3>
+                    <p>Tatlı bir mola: Mocha'nın yoğun espresso, süt, çikolata sosu ve krema ile mükemmel uyumuyla
+                        kendinizi şımartın, lezzetli bir tatlı kaçamağı yaşayın.</p>
+                </div>
+                <!-- Diğer kahve kartlarını buraya ekleyin -->
+            </div>
+        </div>
+
+        <br><br>
+        <button class="btn btn-outline-secondary btn-random fixed-bottom mx-auto d-block mb-3"
+            onclick="showRandomCoffeeRecipe()">Bugün ne içebilirsiniz?</button>
+
+        <h2 id="buz">Soğuk Kahvelerimiz</h2>
+        <hr>
+
+        <div class="row justify-content-center" id="cold-coffee-container">
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Starbucks Mocha Frappuccino Copycat Recipe - Paleo Recipes _ Primal Palate _ Paleo Recipes - Primal Palate _ Paleo Recipes.jpg"
+                    alt="Frappe" class="coffee-img">
+                <h3>Frappe</h3>
+                <p>Lezzetli bir tatlı mola: Frappe ile kahve keyfinizi kremsi ve ferahlatıcı bir içecekle taçlandırın.
+                </p>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Dalgona Honeycomb Toffee Iced Latte (10 MINUTES!) - That Cute Dish!.jpg"
+                    alt="Iced Latte" class="coffee-img">
+                <h3>Dalgona Honey</h3>
+                <p>Sıcak günlerin serin kahvesi: Iced Latte ile kremalı ve ferahlatıcı bir kahve deneyimi yaşayın.</p>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Three Cold Brew Recipes That are So Hot Right Now.jpg" alt="Cold Brew"
+                    class="coffee-img">
+                <h3>Cold brew</h3>
+                <span>Yumuşak ve düşük asitli bir lezzet: Cold Brew kahvenin ferahlatıcı tadıyla gününüzü başlatın veya
+                    mola verin.</span>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Starbucks Gluten Free Menu (Updated 2024).jpg" alt="Iced Americano"
+                    class="coffee-img">
+                <h3>Iced Americano</h3>
+                <span> İced Americano'nun ferahlatıcı tadıyla kahve molasını keyifli hale getirin.</span>
+            </div>
+
+        </div>
+        <br>
+
+        <br>
+        <h2 class="text-center mb-4">Şuruplarımız</h2>
+        <hr>
+        <div class="row justify-content-center" id="cold-coffee-container">
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Sugar-Free Vanilla Syrup Recipe - (1 Calorie & Zero Carbs).jpeg " alt="Vanilya"
+                    class="coffee-img">
+                <h3>Vanilya</h3>
+                <span>Kahve içeceklerine tatlı bir vanilya aroması katan popüler bir şurup çeşidi.</span>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Salted Caramel Coffee Syrup - A Healthy Makeover (1).jpeg" alt="Karamel"
+                    class="coffee-img">
+                <h3>Caramel</h3>
+                <span>Kahve ve kahve bazlı içeceklerde tatlı ve karamel aroması sağlayan bir şurup türü.</span>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\Cinnamon Simple Syrup (1).jpeg" alt="Tarçın" class="coffee-img">
+                <h3>Tarçın</h3>
+                <p>Tarçının baharatlı ve hoş kokusuyla kahve içeceklerine farklı bir lezzet katmak için kullanılan şurup
+                    çeşidi.</p>
+            </div>
+            <div class="col-md-3 coffee-div">
+                <img src="\HTML\img\5-Minute Homemade Almond Syrup.jpg" alt="Badem" class="coffee-img">
+                <h3>Badem</h3>
+                <span>Lezzetli bir dokunuş: Badem şurubuyla kahve içeceğinize hafif bir tatlılık ve benzersiz bir badem
+                    aroması ekleyin, keyifli bir deneyim yaşayın.</span>
+            </div>
+
+            <!-- Diğer soğuk kahve kartları buraya eklenebilir -->
+
+
+            <div class="container">
+                <br><br><br><br>
+                <h2 id="tatli" class="text-center mb-4">Tatlılarımız</h2>
+                <hr>
+                <div class="row" id="coffee-container">
+                    <div class="col-md-3 coffee-div">
+                        <img src="\HTML\img\Tiramisu Affogato.jpg" alt="Tiramisu" class="coffee-img">
+                        <h3>Tiramisu</h3>
+                        <span>Geleneksel bir lezzet: Türk kahvesinin yoğun aroması ve benzersiz tadıyla kültürel bir
+                            serüvene
+                            çıkın.</span>
+                    </div>
+                    <div class="col-md-3 coffee-div">
+                        <img src="\HTML\img\Best Homemade Brownies.jpg" alt="Türk Kahvesi" class="coffee-img">
+                        <h3>Brownie</h3>
+                        <p>Çikolata keyfi: Yoğun çikolata aroması ve yumuşacık dokusuyla brownie'lerimiz sizi çikolata
+                            tutkusuna davet ediyor.</p>
+                    </div>
+                    <div class="col-md-3 coffee-div">
+                        <img src="\HTML\img\Blog del Gourmétier - El Gourmetier.jpg" alt="Makaron" class="coffee-img">
+                        <h3>Makaron</h3>
+                        <p>Her bir makaron, özenle hazırlanmış bir mutluluk dilimi. Tatlı bir mola için renkli
+                            makaronlarla gününüzü tatlandırın.</p>
+                    </div>
+                    <div class="col-md-3 coffee-div">
+                        <img src="\HTML\img\indir (2).jpg" alt="Kruvasan" class="coffee-img">
+                        <h3>Kruvasan</h3>
+                        <p>Bir fincan kahve ve yanında nefis yumuşacık dokusu, tereyağlı lezzetiyle kruvasan gününüzü
+                            tatlandırın.</p>
+                    </div>
+                    <div class="container">
+                        <h2 id="buz" class="text-center mb-4">Soğuk İçeceklerimiz</h2>
+                        <hr>
+
+                        <div class="row justify-content-center" id="cold-coffee-container">
+                            <div class="col-md-3 coffee-div">
+                                <img src="\HTML\img\Limonata - fruchtig-herbe Zitronenlimonade _ Marry Kotter.jpg"
+                                    alt="Limonata" class="coffee-img">
+                                <h3>Limonata</h3>
+                                <span>Taze sıkılmış limonlarla hazırlanan leziz bir limonata.</span>
+                            </div>
+                            <div class="col-md-3 coffee-div">
+                                <img src="\HTML\img\Evde Yapabileceğiniz 5 Kolay Alkolsüz Kokteyl Tarifi Check more at https___evdepara_com_evde-yapabileceginiz-5-kolay-alkolsuz-kokteyl-tarifi_.jpg"
+                                    alt="Mojito" class="coffee-img">
+                                <h3>Mojito</h3>
+                                <span>Taze nane kokusu ve limonun ferahlatıcı tadıyla mojito keyfi.</span>
+                            </div>
+                            <div class="col-md-3 coffee-div">
+                                <img src="\HTML\img\• strawberry lemonade 🍓🍋 •.jpg " alt="Çilekli Limonata"
+                                    class="coffee-img">
+                                <h3>Çilekli Limonata</h3>
+                                <span>Buz gibi çilekli limonata, serinletici bir mola için ideal seçim.</span>
+                            </div>
+                            <div class="col-md-3 coffee-div">
+                                <img src="\HTML\img\8e3889f0-4168-4728-9f36-ee77841e5ddc.jpg " alt="Smoothie"
+                                    class="coffee-img">
+                                <h3>Smoothie</h3>
+                                <span>Serinletici bir smoothie, sağlıklı ve lezzetli bir seçenek arayanlar için ideal
+                                    bir
+                                    içecek. </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="container">
+                <h2>Kahve Sipariş Formu</h2>
+                <label for="kahveTuru">Kahve Türü:</label>
+                <select id="kahveTuru">
+                    <option value="Espresso">Espresso</option>
+                    <option value="Latte">Latte</option>
+                    <option value="Americano">Americano</option>
+                    <!-- Diğer kahve türleri -->
+                </select>
+
+                <label for="boyut">Boyut:</label>
+                <select id="boyut">
+                    <option value="Küçük">Küçük</option>
+                    <option value="Orta">Orta</option>
+                    <option value="Büyük">Büyük</option>
+                </select>
+
+                <input type="checkbox" name="ekstra" value="0.50"> Süt
+                <input type="checkbox" name="ekstra" value="0.75"> Şeker
+                <!-- Diğer ekstralar -->
+
+                <button onclick="hesaplaFiyat()">Fiyatı Hesapla</button>
+
+                <div id="fiyat"></div>
+                <br><br>
+            </div>
+            <h2> Oyun Köşesi</h2>
+
+            <div class="container">
+                <h2>Matematik Oyunu</h2>
+                <p>Sorulan matematik problemi çözün ve cevabı girin.</p>
+                <p id="soru"></p>
+                <input type="number" id="cevapInput">
+                <button id="kontrolBtn">Cevabı Kontrol Et</button>
+                <p id="bilgi"></p>
+            </div>
+
+            <div class="container">
+                <h1>Taş Kağıt Makas Oyunu</h1>
+                <hr>
+                <div id="result" class="result"></div>
+                <div class="buttons">
+                    <button onclick="playGame('taş')">Taş</button>
+                    <button onclick="playGame('kağıt')">Kağıt</button>
+                    <button onclick="playGame('makas')">Makas</button>
+                </div>
+                <br><br>
+            </div>
+
+
+
+
+
+            <div id="game-container">
+                <h1>Sayı Tahmin Oyunu</h1>
+                <p>1 ile 100 arasında bir sayı tahmin edin:</p>
+                <input type="number" id="guessInput" min="1" max="100">
+                <button onclick="checkGuess()">Tahmin Et</button>
+                <p id="message"></p>
+                <br>
+            </div>
+<br><br><br><br><br>
+            <br><br><br>
+
+
+            <div id="play-areas"></div>
+            <p>Puan: <span id="points">0</span></p>
+
+
+
+
+<br><br><br><br><br><br><br><br>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_kVta5g4m3s?si=RoMdJJDJz1C5mDYG"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+                <h1>Sayfamızı Beğendiniz mi?</h1>
+                <hr>
+                <div id="feedback-question" class="feedback-question"></div>
+                <div id="buttons" class="buttons">
+                    <button onclick="answerYes()">Evet</button>
+                    <button id="noButton" class="no-button" onmouseover="moveButton()">Hayır</button>
+                </div>
+                <br><br><br><br><br><br><br>
+            </div>
+
+            <button id="myButtond">Orijinal Metin</button>
+            <button id="fontButton" onclick="changeFont()">Fontu Değiştir</button>
+
+
+            <div id="loading" style="display: none;">
+                <img src="\HTML\img\images (2).png" alt="Yükleniyor...">
+            </div>
+
+
+
+
+
+
+
+
+            <button id="scroll-to-top-button" onclick="scrollToTop()">Başa Dön</button>
+            <script src="path/to/your/jquery-3.6.0.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+            <script src="\HTML\js\main.js"></script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+
+</html>
